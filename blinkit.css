@@ -1,0 +1,168 @@
+*{
+    margin : 0px;
+    padding :0px;
+    font-family:sans-serif;
+}
+
+.my-nav{
+    border-bottom: 1px solid #eeeeee;
+    top:0px;
+    position:sticky;
+    background-color: white;
+    z-index:100;
+}
+.location>h6{
+    font-weight: 900;
+    margin:0px;
+}
+.location >p{
+    margin:0px;
+}
+
+.log {
+    border-right: 1px solid #eeeeee;
+  }
+
+.search-bar{
+    width:40vw;
+    background-color:#f8f8f8 ;
+    border-radius : 8px;
+    border : 1px solid #eeeeee;
+    padding :10px;
+}
+
+.search-bar > input{
+    width:90%; 
+    padding-left : 10px;
+    border : none;
+    background-color: transparent;
+    height:30px
+}
+.search-bar > input :focus{
+    border : none;
+}
+
+button{
+    border : 1px solid black ! important
+}
+
+.hero-section-1{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+}
+
+.my-container{
+    display:flex;
+    justify-content: center;
+    width:82vw;
+    margin-inline:auto;
+    overflow-x:auto
+}
+
+.list{
+    width:100%;
+    white-space: nowrap;
+}
+
+.list>img{
+    display:inline-block;
+    margin:10px;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+.my-categories{
+        display:flex;
+        flex-wrap:wrap;
+        width:85vw;
+        margin-inline:auto;
+}
+.category-card{
+
+    margin-inline:5px;
+}
+.my-prod-container-main{
+    margin-top:10px;
+
+}
+.my-prod-container-main > h1{
+    width:85vw;
+    margin:auto;
+    font-weight:600
+}
+.my-prod-container{
+    width:85vw;
+    margin-inline:auto;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.my-product-card{
+    display:inline-block;
+    width:16%;
+}
+
+.product-name{
+    font-weight: 700;
+}
+
+.product-btn{
+    background-color: rgb(183, 253, 183);
+    height:5vh
+}
+
+
+
+
+
+@media(max-width : 500px){
+    .log, .cart, .location{
+        display:none;
+    }
+    .search-bar > input{
+        width:80%
+    }
+
+    .search-bar{
+        width:50vw;
+    }
+
+    #login{
+        padding-inline:0px; 
+    }
+    .hero-section-1{
+        display:none;
+    }
+    .list>img{
+        transform : scale(0.5, 0.5);
+        margin-inline:-80px;
+        margin-top: -30px;
+    }
+    .my-container{
+        width:100vw;
+    }
+    .my-categories{
+        display:none;
+    }
+    .my-product-card{
+        width:50%;
+        justify-content:center;
+        
+    }
+    
+    .product-btn{
+        background-color: rgb(183, 253, 183);
+        height:5vh;
+        width:fit-content;
+    }
+
+    .my-prod-container{
+        width: 100vw;
+        margin-inline:auto;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    
+}
