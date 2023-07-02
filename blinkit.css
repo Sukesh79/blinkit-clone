@@ -293,4 +293,10 @@ button{
     .footer-5{
         display:block;
     }
+
+    .list>img{
+        display:inline-block;
+        margin:1%;
+        width:45%;
+    }
 }
